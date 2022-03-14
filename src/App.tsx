@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Routes, Route, Outlet, Link, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, Outlet, Link, BrowserRouter, Navigate } from 'react-router-dom'
 import styles from './App.module.scss'
 import { SeaOfFallenStars } from './SeaOfFallenStars/SeaOfFallenStars'
 
@@ -9,11 +9,10 @@ export const App = () => (
         <Routes>
             <Route path="/sea-of-fallen-stars/" element={<Layout />}>
                 <Route index element={<SeaOfFallenStars />} />
-                <Route path="about" element={<About />} />
                 <Route path="dashboard" element={<Dashboard />} />
 
                 {/* Using path="*"" means "match anything", so this route acts like a catch-all for URLs that we don't have explicit routes for. */}
-                <Route path="*" element={<NoMatch />} />
+                <Route path="*" element={<Navigate replace to="/sea-of-fallen-stars/" />} />
             </Route>
         </Routes>
     </BrowserRouter>
@@ -22,12 +21,17 @@ export const App = () => (
 const Layout = () => (
     <div className={styles.layout}>
         <div className={styles.header}>
-            <h1 className={styles.siteName}>Sea of Fallen Stars</h1>
+            <Link to="/sea-of-fallen-stars/">
+                <h1 className={styles.siteName}>Sea of Fallen Stars</h1>
+            </Link>
             {/* A "layout route" is a good place to put markup you want to share across all the pages on your site, like navigation. */}
             <nav className={styles.nav}>
                 <ul>
                     <li>
-                        <Link to="/">Map</Link>
+                        <Link to="/sea-of-fallen-stars/map">Map</Link>
+                    </li>
+                    <li>
+                        <Link to="/sea-of-fallen-stars/dashboard">Dashboard</Link>
                     </li>
                 </ul>
             </nav>
@@ -39,22 +43,6 @@ const Layout = () => (
     </div>
 )
 
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   );
-// }
-
-function About() {
-    return (
-        <div>
-            <h2>About</h2>
-        </div>
-    )
-}
-
 function Dashboard() {
     return (
         <div>
@@ -63,13 +51,13 @@ function Dashboard() {
     )
 }
 
-function NoMatch() {
-    return (
-        <div>
-            <h2>Nothing to see here!</h2>
-            <p>
-                <Link to="/">Go to the home page</Link>
-            </p>
-        </div>
-    )
-}
+// function NoMatch() {
+//     return (
+//         <div>
+//             <h2>Nothing to see here!</h2>
+//             <p>
+//                 <Link to="/">Go to the home page</Link>
+//             </p>
+//         </div>
+//     )
+// }
