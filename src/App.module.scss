@@ -1,0 +1,28 @@
+.layout {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .siteName {
+            color: goldenrod;
+        }
+        .nav {
+            background-color: black;
+            color: white;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                li {
+                    a {
+                        color: white;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

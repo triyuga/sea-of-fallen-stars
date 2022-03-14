@@ -1,0 +1,54 @@
+.canvas {
+    // width: 3000px;
+    // height: 2241px;
+    // width: 1500px;
+    // height: 1120px;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    position: relative;
+
+    .backgroundImage {
+        display: block;
+    }
+
+    .mouseCoordinates {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(black, 0.5);
+        color: white;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+
+        background-color: black;
+        padding: 30px;
+        font-size: 18px;
+        color: white;
+
+        .closeButton {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        h1 {
+            color: goldenrod;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.marker {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
