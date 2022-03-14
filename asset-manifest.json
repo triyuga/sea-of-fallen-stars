@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/sea-of-fallen-stars/static/css/main.5093efb1.css",
-    "main.js": "/sea-of-fallen-stars/static/js/main.96ff5581.js",
+    "main.js": "/sea-of-fallen-stars/static/js/main.0ac90f34.js",
     "static/js/787.edd4599c.chunk.js": "/sea-of-fallen-stars/static/js/787.edd4599c.chunk.js",
     "static/media/SeaOfFallenStarsMap-3000.jpg": "/sea-of-fallen-stars/static/media/SeaOfFallenStarsMap-3000.bae5598ed0668c7f85c9.jpg",
     "static/media/SeaOfFallenStarsMap-3000-no-labels.jpg": "/sea-of-fallen-stars/static/media/SeaOfFallenStarsMap-3000-no-labels.66c99bde28ab9f0fbf58.jpg",
     "index.html": "/sea-of-fallen-stars/index.html",
     "main.5093efb1.css.map": "/sea-of-fallen-stars/static/css/main.5093efb1.css.map",
-    "main.96ff5581.js.map": "/sea-of-fallen-stars/static/js/main.96ff5581.js.map",
+    "main.0ac90f34.js.map": "/sea-of-fallen-stars/static/js/main.0ac90f34.js.map",
     "787.edd4599c.chunk.js.map": "/sea-of-fallen-stars/static/js/787.edd4599c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5093efb1.css",
-    "static/js/main.96ff5581.js"
+    "static/js/main.0ac90f34.js"
   ]
 }
